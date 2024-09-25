@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd 
 
 # import des données 
-df = pd.read_csv('./datasets/online-payments-fraud-detection-dataset.zip',usecols=['type', 'nameOrig', 'oldbalanceOrg', 'newbalanceOrig'],nrows=10)
+df = pd.read_csv('./data.csv',usecols=['type', 'nameOrig', 'oldbalanceOrg', 'newbalanceOrig'],nrows=10)
 # Ajouter deux colonnes vides au DataFrame
 df['Commentaire'] = ""
 df['Commentaire2'] = ""
